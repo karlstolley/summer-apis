@@ -57,7 +57,6 @@ h1,h2,h3,h4 {
   text-transform: uppercase;
 }
 h1 {
-  text-align: center;
   font-size: 2.2222em; /* 40 / 18 */
   line-height: 1.4em; /* 56 / 40 */
 }
@@ -97,6 +96,11 @@ h1 small {
   padding-top: 0.3333em; /* 6 / 18 */
   padding-bottom: 0.2222em; /* 4 / 18 */
   margin-bottom: 1.5555em; /* 28 / 18 */
+  letter-spacing: 0.1em;
+}
+h1 b {
+  text-transform: none;
+  padding-left: 4.6667%;
 }
 #details {
   margin: 0;
@@ -148,6 +152,9 @@ ul li {
 p + ul {
   padding-top: 0.7778em; /* 14px */
 }
+p + p {
+  padding-top: 0.7778em; /* 14px */
+}
 li {
   padding-bottom: 0.3889em; /* 7px */
 }
@@ -184,6 +191,7 @@ html.wf-active {
     text-align: left;
     font-size: 5.0625em; /* 91.125px */
     line-height: 1.2290em; /* 112 / 91 */
+    letter-spacing: -0.05em; /* -4 / 40 */
   }
   h1 small {
     font-size: 0.1975em; /* 18 / 91.125 */
@@ -253,7 +261,7 @@ html.wf-active {
   #principles {
     margin-left: 34.66476462%; /* 243 / 701 */
     padding-left: 3.44403444%; /* 28 / 813 */
-    margin-top: 84px;
+    margin-top: 6.222em; /* 112 / 18 = 6.2222222222em */
   }
   #calendar {
     margin-top: 84px;
