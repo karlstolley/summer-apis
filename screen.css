@@ -1,0 +1,310 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable */
+/* Keep reset CSS to one minified line */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Custom Site Styles */
+
+/*
+  Use the text-size-adjust property
+  to prevent automatically inflating
+  text on orientation changes
+  (portrait to landscape on a phone,
+  for example):
+*/
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ie-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* HTML5 Elements as Blocks; Cribbed from HTML5 Boilerplate */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* ========== Base Styles ========== */
+/* Modular Scale: http://www.modularscale.com/?18&px&1.5 */
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.125em; /* 18px */
+  line-height: 1.5556em; /* 28px @ 18px */
+  color: #a63140;
+  background: #e1fdff;
+}
+h1,h2,h3,h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h1 {
+  text-align: center;
+  font-size: 2.2222em; /* 40 / 18 */
+  line-height: 1.4em; /* 56 / 40 */
+}
+h2 {
+  font-size: 1.5em; /* 27 / 18 */
+  line-height: 1.0370em; /* 28 / 27 */
+}
+
+h3 {
+  text-transform: none;
+}
+a {
+  color: #296c94;
+}
+cite,em,i {
+  font-style: italic;
+}
+strong,b {
+  font-weight: bold;
+}
+
+/* ========== Layout =============== */
+section,
+#details {
+  padding: 1.5556em 4.6667%; /* 28px / 600px */
+}
+
+
+/* ========== Modules ============== */
+h1 small {
+  background: #ffd58e;
+  color: #a63140;
+  text-align: center;
+  display: block;
+  line-height: 1;
+  font-size: 0.4444em; /* 18 / 40.5 */
+  padding-top: 0.3333em; /* 6 / 18 */
+  padding-bottom: 0.2222em; /* 4 / 18 */
+  margin-bottom: 1.5555em; /* 28 / 18 */
+}
+#details {
+  margin: 0;
+}
+#details li {
+  list-style-type: none;
+  padding: 0;
+  text-indent: -1em;
+  margin-left: 1em;
+}
+#principles,
+#booklist,
+#technology {
+  color: #ffd58e;
+  background: #a63140;
+  font-family: Georgia, "Times New Roman", Times, Roman, serif;
+}
+.calendar ul {
+  color: #296c94;
+}
+#booklist ul {
+  color: #e1fdff;
+}
+#booklist ul p {
+  color: #ffd58e;
+}
+#booklist ul h3 {
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  padding-bottom:  1.037em; /* 28px / 27px */
+}
+h3 {
+  padding-bottom: 0.3889em; /* 7px */
+}
+ul,ol {
+  margin-left: 1em;
+  padding-bottom: 0.3889em; /* 7px */
+}
+ol.calendar {
+  margin-left: 0;
+}
+ul li {
+  margin-left: 0;
+  list-style-type: square;
+}
+p + ul {
+  padding-top: 0.7778em; /* 14px */
+}
+li {
+  padding-bottom: 0.3889em; /* 7px */
+}
+li p {
+  padding-top: 0.3889em; /* 7px */
+  padding-bottom: 0.3889em; /* 7px */
+}
+
+#footer {
+  padding: 3.5em 4.6667% 1.1667em 4.6667%;
+  font-size: 0.6667em; /* 12px */
+  line-height: 1.75em; /* 21px */
+}
+/* ========== State ================ */
+
+html.wf-active {
+  font-family: "ff-dax-web-pro";
+}
+.wf-active #principles,
+.wf-active #booklist,
+.wf-active #technology {
+  font-family: "ff-karbid-slab-web-pro";
+}
+
+.wf-active h1,
+.wf-active h2,
+.wf-active h3 {
+  font-family: "ff-dax-web-pro";
+
+}
+
+@media screen and (min-width: 435px) {
+  h1 {
+    text-align: left;
+    font-size: 5.0625em; /* 91.125px */
+    line-height: 1.2290em; /* 112 / 91 */
+  }
+  h1 small {
+    font-size: 0.1975em; /* 18 / 91.125 */
+    padding-top: 0.3333em; /* 6 / 18 */
+    padding-bottom: 0.2222em; /* 4 / 18 */
+    margin-bottom: 0;
+  }
+  h1 b {
+    display: block;
+    font-weight: inherit;
+    padding: 0 4.6667% 0 4.6667%; /* 28px / 600px */
+  }
+}
+
+@media screen and (min-width: 550px) {
+  ul,ol {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 635px) {
+  /* 3-column layout, 813px viewport
+     56px margin, 28px gutter
+     Columns    Offset  VP Offset
+     1:  215    243     299
+     2:  458    486     542
+     3:  710    -
+  */
+  h1 b {
+    padding: 0 6.888068881% 0 6.888068881%; /* 56px / 813 */
+  }
+  section,
+  #details {
+    padding: 1.5556em 6.888068881%; /* 56px / 813 */
+  }
+
+  #summary {
+    padding-top: 1.5556em; /* 56px */
+  }
+}
+
+@media screen and (min-width: 700px) {
+  h1 b {
+    padding-top: 28px;
+  }
+}
+
+@media screen and  (min-width: 765px) {
+  /* 3-column layout, 813px viewport
+     56px margin, 28px gutter
+     Columns    Offset  VP Offset
+     1:  215    243     299
+     2:  458    486     542
+     3:  710    -
+  */
+  #details {
+    margin-left: 34.66476462%; /* 243 / 701 */
+    padding-left: 3.44403444%; /* 28 / 813 */
+  }
+  #summary,
+  #projects {
+    position: absolute;
+    width: 26.44526445%; /* 215 / 813 */
+    padding: 1.5556em 0; /* 56 / 215 */
+    padding-left: 6.888068881%;
+  }
+  #principles {
+    margin-left: 34.66476462%; /* 243 / 701 */
+    padding-left: 3.44403444%; /* 28 / 813 */
+    margin-top: 84px;
+  }
+  #calendar {
+    margin-top: 84px;
+    margin-left: 34.66476462%; /* 243 / 701 */
+    padding-left: 3.44403444%; /* 28 / 813 */
+  }
+
+  #booklist {
+    margin-top: 56px;
+    margin-bottom: 84px;
+  }
+  #booklist li {
+    display: flex;
+    padding-bottom: 28px;
+  }
+  #booklist li h3 {
+    width: 30.67047076%; /* 215 / 701 */
+  }
+  #booklist li p {
+    flex-basis: auto;
+    padding: 0;
+    margin: 0; /* 56 / 215 */
+    width: 65.33523538%; /* 458 / 701 */
+    margin-left: 5.991440799%;
+  }
+  #booklist aside {
+    width: 65.33523538%; /* 458 / 701 */
+    padding: 0;
+  }
+  #technology {
+    margin-top: 168px;
+    margin-left: 34.66476462%; /* 243 / 701 */
+    padding-left: 3.44403444%; /* 28 / 813 */
+  }
+  #contact {
+    margin-top: 84px;
+    width: 65.33523538%; /* 458 / 701 */
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .calendar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .calendar > li {
+    width: 50%;
+  }
+  .calendar > li:nth-child(odd) {
+    box-sizing: border-box;
+    padding-right: 28px;
+  }
+}
