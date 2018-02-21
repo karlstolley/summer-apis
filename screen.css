@@ -25,23 +25,6 @@ html {
   text-size-adjust: 100%;
 }
 
-/* HTML5 Elements as Blocks; Cribbed from HTML5 Boilerplate */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-
 /* ========== Base Styles ========== */
 /* Modular Scale: http://www.modularscale.com/?18&px&1.5 */
 
@@ -52,7 +35,8 @@ html {
   color: #a63140;
   background: #e1fdff;
 }
-h1,h2,h3,h4 {
+
+h1,h2,h3 {
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -62,12 +46,35 @@ h1 {
 }
 h2 {
   font-size: 1.5em; /* 27 / 18 */
-  line-height: 1.0370em; /* 28 / 27 */
+  line-height: 1.037em; /* 28 / 27 */
+  padding-bottom:  1.037em; /* 28px / 27px */
 }
-
 h3 {
   text-transform: none;
+  padding-bottom: 0.3889em; /* 7px */
 }
+
+ul,ol {
+  margin-left: 1em;
+  padding-bottom: 0.3889em; /* 7px */
+}
+ul li {
+  margin-left: 0;
+  list-style-type: square;
+}
+li {
+  padding-bottom: 0.3889em; /* 7px */
+}
+li p {
+  padding-top: 0.3889em; /* 7px */
+  padding-bottom: 0.3889em; /* 7px */
+}
+p + ul,
+p + p {
+  padding-top: 0.7778em; /* 14px */
+}
+
+
 a {
   color: #296c94;
 }
@@ -102,6 +109,9 @@ h1 b {
   text-transform: none;
   padding-left: 4.6667%;
 }
+ol.calendar {
+  margin-left: 0;
+}
 #details {
   margin: 0;
 }
@@ -118,6 +128,12 @@ h1 b {
   background: #a63140;
   font-family: Georgia, "Times New Roman", Times, Roman, serif;
 }
+#footer {
+  padding: 3.5em 4.6667% 1.1667em 4.6667%;
+  font-size: 0.6667em; /* 12px */
+  line-height: 1.75em; /* 21px */
+}
+
 .calendar ul {
   color: #296c94;
 }
@@ -132,58 +148,19 @@ h1 b {
   margin: 0;
   padding: 0;
 }
-h2 {
-  padding-bottom:  1.037em; /* 28px / 27px */
-}
-h3 {
-  padding-bottom: 0.3889em; /* 7px */
-}
-ul,ol {
-  margin-left: 1em;
-  padding-bottom: 0.3889em; /* 7px */
-}
-ol.calendar {
-  margin-left: 0;
-}
-ul li {
-  margin-left: 0;
-  list-style-type: square;
-}
-p + ul {
-  padding-top: 0.7778em; /* 14px */
-}
-p + p {
-  padding-top: 0.7778em; /* 14px */
-}
-li {
-  padding-bottom: 0.3889em; /* 7px */
-}
-li p {
-  padding-top: 0.3889em; /* 7px */
-  padding-bottom: 0.3889em; /* 7px */
-}
 
-#footer {
-  padding: 3.5em 4.6667% 1.1667em 4.6667%;
-  font-size: 0.6667em; /* 12px */
-  line-height: 1.75em; /* 21px */
-}
 /* ========== State ================ */
 
-html.wf-active {
+html.wf-active,
+.wf-active h1,
+.wf-active h2,
+.wf-active h3 {
   font-family: "ff-dax-web-pro";
 }
 .wf-active #principles,
 .wf-active #booklist,
 .wf-active #technology {
   font-family: "ff-karbid-slab-web-pro";
-}
-
-.wf-active h1,
-.wf-active h2,
-.wf-active h3 {
-  font-family: "ff-dax-web-pro";
-
 }
 
 @media screen and (min-width: 435px) {
