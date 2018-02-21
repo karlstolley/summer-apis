@@ -1,0 +1,12 @@
+If I move this layout to a grid, a template area like this would do:
+
+header header header
+summary principles principles
+....... calendar calendar
+booklist booklist booklist
+projects technology technology
+contact contact .
+footer footer .
+
+But, right now everything is good-enough with the old-school positioning-based layout and a
+smattering of flexbox, so.
