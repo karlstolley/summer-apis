@@ -148,6 +148,9 @@ ol.calendar {
   margin: 0;
   padding: 0;
 }
+#booklist a {
+  color: #ffd58e;
+}
 
 /* ========== State ================ */
 
