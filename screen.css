@@ -293,8 +293,8 @@ h3 + small {
   display: block;
 }
 
-/* 600px / 16 = 37.5em */
-@media screen and (min-width: 37.5em) {
+/* 660px / 16 = 37.5em */
+@media screen and (min-width: 41.25em) {
   #header {
     padding-top: 4.6315789474em; /* 88 / 19 = 4.6315789474 */
   }
