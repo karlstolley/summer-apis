@@ -174,12 +174,12 @@ header small {
   text-decoration: none;
 }
 #header a small {
-  color: #201a1f;
+  color: #296c94; /* blue */
 }
 #header h1,
 #header .tagline,
 #footer {
-  color: #2c2429;
+  color: #296c94; /* blue */
 }
 
 #content h2 {
