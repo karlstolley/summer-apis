@@ -174,12 +174,12 @@ header small {
   text-decoration: none;
 }
 #header a small {
-  color: #296c94; /* blue */
+  color: #a63140; /* red */
 }
 #header h1,
 #header .tagline,
 #footer {
-  color: #296c94; /* blue */
+  color: #a63140; /* red */
 }
 
 #content h2 {
@@ -209,6 +209,11 @@ h3 + small {
   font-size: 0.8em; /* 15.2px / 19px */
   line-height: 1.5789473684em; /* 24 / 15.2px = 1.5789473684 */
   padding-bottom: 1.5789473684em;
+}
+
+.tagline a,
+#footer a {
+  color: #296c94; /* blue */
 }
 
 .nav,
