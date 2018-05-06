@@ -121,7 +121,7 @@
     // Identify the due date for assigned work based on the week's expiration
     dueDate = new Date(futureWeeks[0].attr('data-expires'));
     // Append a human-readable due-date to the assigned header
-    $('#current-week .assigned h3').after('<small>Due ' + namedDays[dueDate.getDay()] + ' ' + namedMonths[dueDate.getMonth()] + ' ' + dueDate.getDate() +'</small>');
+    $('#this-week .assigned h3').after('<small>Due ' + namedDays[dueDate.getDay()] + ' ' + namedMonths[dueDate.getMonth()] + ' ' + dueDate.getDate() +'</small>');
 
 
     if (typeof(futureWeeks[1])!=="undefined") {
@@ -131,7 +131,7 @@
   }
 
   // Insert upcoming deadlines at the end of current week's assigned work
-  $('#current-week .assigned').append($('#upcoming-deadlines'));
+  $('#this-week .assigned').append($('#upcoming-deadlines'));
 
   if(typeof(github_url) !== "undefined") {
     $.get(github_url, function(data) {
