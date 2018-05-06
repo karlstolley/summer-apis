@@ -291,11 +291,8 @@ h3 + small {
   content: 'menu';
 }
 
-#calendar.js .extended {
-  display: none;
-}
-#calendar.js .is-visible .extended {
-  display: block;
+.js #this-week + h2 {
+  padding-top: 2.5869735105em; /* 96 / 37.109 = 2.5869735105 */
 }
 
 /* 660px / 16 = 37.5em */

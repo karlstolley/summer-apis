@@ -93,6 +93,9 @@
   $(document).ready(toggledNav());
   $(window).on('resize', toggledNav);
 
+  // Set up a non-semantic container to highlight the current week
+  $('#calendar .primary > header').html('<h2>This Week</h2>').after('<div id="this-week"></div>');
+
   // Highlight the current and next weeks
 
   // Go through each week to build the array of future weeks
@@ -108,48 +111,24 @@
   if (futureWeeks.length > 0) {
     // Put an .extended class on all weeks
     $('.week').each(function() {
-      $(this).addClass('extended');
+      $(this).addClass('is-future');
     });
 
-    // Show the current week
-    futureWeeks[0].addClass('preview is-current').removeClass('extended').attr('id', 'current-week');
+    // Identify the current week
+    futureWeeks[0].clone().removeClass('is-future').appendTo('#this-week');
+    futureWeeks[0].addClass('is-current').removeClass('is-future').attr('id', 'current-week');
+    futureWeeks[0].before('<h2>Full Calendar</h2>');
+    // Identify the due date for assigned work based on the week's expiration
+    dueDate = new Date(futureWeeks[0].attr('data-expires'));
+    // Append a human-readable due-date to the assigned header
+    $('#current-week .assigned h3').after('<small>Due ' + namedDays[dueDate.getDay()] + ' ' + namedMonths[dueDate.getMonth()] + ' ' + dueDate.getDate() +'</small>');
+
 
     if (typeof(futureWeeks[1])!=="undefined") {
-      // If there is another week beyond the current one, show it as well
+      // If there is another week beyond the current one, identify it as well
       futureWeeks[1].attr('id', 'next-week');
-      dueDate = new Date(futureWeeks[0].attr('data-expires'));
-      $('#current-week .assigned h3').after('<small>Due ' + namedDays[dueDate.getDay()] + ' ' + namedMonths[dueDate.getMonth()] + ' ' + dueDate.getDate() +'</small>');
     }
-
-    // Watch for hashes pointing to #week-XX
-    if (window.location.hash.indexOf('week-') === -1) {
-
-      toggledLabel = ' <small class="button"><a class="toggle" href="#next-week">Show Future Weeks</a></small>';
-
-    }
-    else {
-
-      $('.primary').addClass('is-visible');
-      toggledLabel = ' <small class="button"><a class="toggle" href="#current-week">Show Current Week Only</a></small>';
-
-    }
-
   }
-
-  // Toggles for showing full calendar
-  // Append a show link (.button)
-  $('.label, .is-current').append(toggledLabel);
-  // Toggle to actually show/hide content
-  $('.toggle').on('click', function(e) {
-    var hash = $(this).attr('href');
-    $(this).closest('.primary').toggleClass('is-visible');
-    window.location.assign(hash); // set the page-location hash to the current href value
-    $('.toggle').toggleLabel(
-      {status: 'All Weeks', action: 'Show Current Week Only', href: '#current-week'},
-      {status: 'Current Week', action: 'Show Future Weeks', href: '#next-week'}
-    );
-    e.preventDefault(); // default behavior handled above, with window.location.assign
-  });
 
   // Insert upcoming deadlines at the end of current week's assigned work
   $('#current-week .assigned').append($('#upcoming-deadlines'));
