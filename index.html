@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en" id="calendar" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8" />
+  <title>ITMD 362: Human-Computer Interaction and Web Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <link rel="stylesheet" href="screen.css" media="screen" />
+  <!-- Open Graph -->
+  <meta property="og:url" content="https://courses.karlstolley.com/hci/" />
+  <meta property="og:title" content="ITMD 362: Human-Computer Interaction and Web Design" />
+  <meta property="og:description" content="Principles and practices of HCI through a mobile-first approach to web design and development." />
+  <meta property="og:image" content="https://courses.karlstolley.com/hci/hci-course-preview.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet"  href="#//basehold.it/22" />
+</head>
+<body>
+<header id="header">
+  <a href="https://courses.karlstolley.com/hci/" rel="home">
+    <small>ITMD 362</small>
+    <h1>
+      Human-Computer Interaction and Web&nbsp;Design
+    </h1>
+  </a>
+  <p class="tagline">
+    Principles and practices of HCI through a mobile-first approach to web design and development.
+    Taught by <a href="#instructor">Professor Karl Stolley</a>, Spring 2018.
+  </p>
+  <nav id="navigation">
+    <ul class="nav">
+      <li id="nav-cal"><a href="#current-week">Calendar</a></li>
+      <li id="nav-dem"><a href="https://github.com/itmd-362-2018">Demos</a></li>
+      <li id="nav-lnk"><a href="#links">Links</a></li>
+      <li id="nav-pro"><a href="projects/#current">Projects</a></li>
+      <li id="nav-pol"><a href="policies/">Policies</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content">
+  <section class="primary">
+    <header>
+      <h2>Calendar</h2>
+    </header>
+
+    <article id="upcoming-deadlines">
+      <header>
+        <h3>Upcoming Project Deadlines</h3>
+      </header>
+      <ul>
+        <li>
+          Project 3 testing script, site plan, and A/V release posted to Basecamp by Thursday, 4/19
+          11:59pm CT
+        </li>
+      </ul>
+    </article>
+
+    <article id="week-01" class="week" data-expires="2018-01-17T12:00:00-06:00">
+      <header>
+        <h3>Course Overview; Valid, Semantic HTML</h3>
+        <small>Week&nbsp;One</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, January 8 <a href="https://youtu.be/6juqplTMTcI">Video</a></h4>
+          <ol>
+            <li>Welcome &amp; introductions</li>
+            <li>Course policies &amp; calendar</li>
+            <li>Course technologies</li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>
+            Wednesday, January 10
+            <a href="https://youtu.be/5ShFdGdENps">Video</a>
+            <a href="boards/2018-01-10-board.png">Board</a>
+          </h4>
+          <ol>
+            <li>Valid, semantic HTML</li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">MDN HTML
+              reference</a>
+            </li>
+            <li>Forbidden tags/patterns</li>
+            <li>
+              ARIA <a href="https://www.w3.org/TR/wai-aria/roles">roles</a> and
+              <a href="https://www.w3.org/TR/html-aria/">attributes in HTML</a>
+            </li>
+            <li>HTML linting</li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Read</h4>
+            <ol>
+              <li>Course policies, calendar, and projects [Online students]</li>
+              <li>
+                Refamiliarize yourself with the contents and organization of the
+                <a href="https://developer.mozilla.org/">Mozilla Developer Network</a>’s
+                <a href="https://developer.mozilla.org/en-US/docs/Web">Web technology for developers</a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <h4>To Do</h4>
+            <p class="note">
+              Ordinarily, assigned work is due by the start of class the following week. But
+              this week, be sure to do the following tasks as soon as possible.
+            </p>
+            <ol>
+              <li>
+                Submit ITMD 362 Survey and Contract (link in your @hawk.iit.edu inbox; email
+                instructor at karl.stolley@gmail.com if you did not receive it)
+              </li>
+              <li>
+                Create Basecamp account (invite will arrive after you submit the Survey and
+                Contract)
+              </li>
+              <li>
+                Technology setup; follow
+                <a href="https://gist.github.com/karlstolley/810e9cb69727ff20c3cf56ac33734b79">these instructions</a>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+    <article id="week-02" class="week" data-expires="2018-01-22T12:00:00-06:00">
+      <header>
+        <h3>Mobile-First, Relative-Unit CSS and Media Queries</h3>
+        <small>Week&nbsp;Two</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, January 15</h4>
+          <ol>
+            <li>No Class; MLK Holiday</li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, January 17 <a href="https://youtu.be/Y3qbAjuj3ME">Video</a></h4>
+          <ol>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN CSS reference</a>
+            </li>
+            <li>Working with <a href="https://gist.github.com/profstolley/b1f851e061f98fcbc0e41d39adc32847">reset CSS</a></li>
+            <li>Relative units in CSS</li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Read</h4>
+            <ol>
+              <li>Marcotte, “<a href="http://alistapart.com/article/responsive-web-design">Responsive Web Design</a>”</li>
+              <li>MDN, <a href="https://developer.mozilla.org/en-US/Apps/Progressive/Responsive/responsive_design_building_blocks">Responsive Design Building Blocks</a></li>
+            </ol>
+          </li>
+          <li>
+            <h4>To Do</h4>
+            <ol>
+              <li>Post to <a href="https://3.basecamp.com/3058761/buckets/5674607/messages/862540403">Week One/Two Discussion</a> on Basecamp</li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+    <article id="week-03" class="week" data-expires="2018-01-29T12:00:00-06:00">
+      <header>
+        <h3>Unobtrusive JavaScript; Form Elements, Data, and Events</h3>
+        <small>Week&nbsp;Three</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, January 22 <a href="https://youtu.be/Hw6EgeDQLOI">Video</a></h4>
+          <ol>
+            <li>Introduce <a href="projects/#project-one">Project One: Onboarding</a></li>
+            <li>Form elements: accessible HTML structures</li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, January 24 <a href="https://youtu.be/d8qjJ3QuyY4">Video</a></h4>
+          <ol>
+            <li>
+              MDN
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>
+              and
+              <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">DOM</a>
+              references
+            </li>
+            <li>Unobtrusive JavaScript</li>
+            <li>Form elements: data and events</li>
+            <li>Events and the event loop</li>
+            <li>
+              The <code>pattern</code> attribute and JavaScript
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp">regular expressions</a>
+            </li>
+            <li>JavaScript hinting and linting</li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Read</h4>
+            <ol>
+              <li>
+                MDN,
+                <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms">HTML Forms Guide</a>
+              </li>
+              <li>
+                MDN,
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Regular Expressions Guide</a>
+              </li>
+              <li>
+                Cheung, <a href="http://www.uxbooth.com/articles/styling-forms-accessibly/">Styling Forms Accessibly</a>
+              </li>
+              <li>
+                Lupton, <i>Thinking with Type</i>, Introduction, LETTER (pp. 7–8, 10–83)
+              </li>
+            </ol>
+          </li>
+          <li>
+            <h4>To Do</h4>
+            <ol>
+              <li>Production Problem 01</li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+    <article id="week-04" class="week" data-expires="2018-02-05T12:00:00-06:00">
+      <header>
+        <h3>Typography: Content, User Interface</h3>
+        <small>Week&nbsp;Four</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, January 29 <a href="https://youtu.be/9fgSKPqN5Dk">Video</a></h4>
+          <ol>
+            <li>Type classification and anatomy</li>
+            <li><a href="https://www.fonts.com/content/learning/fontology">Resources at fonts.com</a></li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, January 31 <a href="https://youtu.be/K1Frv0nTVk0">Video</a></h4>
+          <ol>
+            <li>Working with web fonts</li>
+            <li>Using the <a href="https://github.com/typekit/webfontloader">Web Font Loader</a></li>
+            <li>Typekit reference on <a href="https://helpx.adobe.com/typekit/using/open-type-syntax.html">OpenType features in CSS</a></li>
+            <li>Setting type for content readability (vs. legibility)</li>
+            <li>Form elements: CSS styling and the road to hell</li>
+            <li>
+              The form portion of
+              <a href="https://necolas.github.io/normalize.css/">Normalize.css</a>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Read</h4>
+            <ol>
+              <li>
+                Lupton, <i>Thinking with Type</i>, TEXT (pp. 87–147)
+              </li>
+            </ol>
+          </li>
+          <li>
+            <h4>To Do</h4>
+            <ol>
+              <li>
+                Post Project One drafts and videos to Basecamp by Thursday, 2/1 11:59pm CT
+              </li>
+              <li>Production Problem 01 Discussion</li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+    <article id="week-05" class="week" data-expires="2018-02-12T12:00:00-06:00">
+      <header>
+        <h3>The New CSS Layout</h3>
+        <small>Week&nbsp;Five</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, February 5 <a href="https://youtu.be/bY_z4GY-kys">Video</a></h4>
+          <ol>
+            <li>Grid theory</li>
+            <li>Prototyping and experimenting with grids</li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, February 7 <a href="https://youtu.be/3RZ11q0MsAM">Video</a></h4>
+          <ol>
+            <li>Layouts, site contruction</li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Read</h4>
+            <ol>
+              <li>
+                Lupton, <i>Thinking with Type</i>, GRID (pp. 150–207)
+              </li>
+              <li>
+                Andrew, <i>The New CSS Layout</i>, All Chapters
+              </li>
+            </ol>
+          </li>
+          <li>
+            <h4>To Do</h4>
+            <ol>
+              <li>Finish responding to peer drafts by Sunday, 2/11</li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+    <article id="week-06" class="week" data-expires="2018-02-19T12:00:00-06:00">
+      <header>
+        <h3>Color and Material Design Systems</h3>
+        <small>Week&nbsp;Six</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, February 12 <a href="https://youtu.be/p71YUEARSDc">Video</a></h4>
+          <ol>
+            <li>Color interaction</li>
+            <li>Developing palettes</li>
+            <li>CSS color models</li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, February 14 <a href="https://youtu.be/_wkf9FOUbY8">Video</a></h4>
+          <ol>
+            <li>Taking colors from palette to designs</li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Read</h4>
+            <ol>
+              <li>
+                Creative Bloq, <a href="http://www.creativebloq.com/colour/colour-theory-11121290">How to master colour theory</a>
+              </li>
+              <li>
+                Smashing Magazine, Color Theory for Designers: <a href="https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/">Part I</a>, <a href="https://www.smashingmagazine.com/2010/02/02/color-theory-for-designers-part-2-understanding-concepts-and-terminology/">Part II</a>, <a href="https://www.smashingmagazine.com/2010/02/08/color-theory-for-designer-part-3-creating-your-own-color-palettes/">Part III</a>
+              </li>
+              <li>
+                Google, <a href="https://material.io/guidelines/">Material Design</a>
+                (all sections)
+              </li>
+            </ol>
+            <h4>To Do</h4>
+            <ol>
+              <li><b>Project One Due</b> Sunday, 2/18 11:59pm CT</li>
+              <li>Post any lingering questions for next week’s catch-up day</li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+    <article id="week-07" class="week" data-expires="2018-02-26T12:00:00-06:00">
+      <header>
+        <h3>Git in Team Settings; Catching Up</h3>
+        <small>Week&nbsp;Seven</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, February 19 <a href="https://youtu.be/mtLwaTFz0N8">Video</a></h4>
+          <ol>
+            <li>Introduce <a href="projects/#project-two">Project Two</a></li>
+            <li>Git and GitHub in team settings</li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, February 21 <a href="https://youtu.be/a7Fss1sozic">Video</a></h4>
+          <ol>
+            <li>Catch up and Q&amp;A over any material covered so far</li>
+            <li>
+              Material design systems:
+              <a href="https://material.io/guidelines/">Google</a>,
+              <a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/color/">Apple</a> (color)
+            </li>
+            <li>Developing custom style guides and systems</li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Read</h4>
+            <ol>
+              <li>Clark, <i>Designing for Touch</i>, Ch. 1 &amp; 2</li>
+            </ol>
+          </li>
+          <li>
+            <h4>To Do</h4>
+            <ol>
+              <li>Production Problem 02</li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+    <article id="week-08" class="week" data-expires="2018-03-05T12:00:00-06:00">
+      <header>
+        <h3>Designing for Touch; Motion and Effects</h3>
+        <small>Week&nbsp;Eight</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, February 26 <a href="https://youtu.be/x_jlmjZvW-Y">Video</a></h4>
+          <ol>
+            <li>Fingers and screens</li>
+            <li>Gestures</li>
+            <li>Discoverability and the geography of screens</li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, February 28 <a href="https://youtu.be/SyPQJeDGuFg">Video</a></h4>
+          <ol>
+            <li>Keeping motion accessible</li>
+            <li>CSS3 transition and animation properties</li>
+            <li>JavaScript’s limited role</li>
+            <li>Working with time</li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Read</h4>
+            <ol>
+              <li>Clark, <i>Designing for Touch</i>, Ch. 3, 4, &amp; 5</li>
+              <li>Amin Al Hazmani, <a href="https://alistapart.com/article/motion-with-meaning-semantic-animation-in-interface-design">Motion with Meaning</a></li>
+              <li>Craig Dehner, <a href="http://thekineticui.com/motion-design-is-the-future-of-ui/">Motion Design is the Future of UI</a></li>
+              <li>Val Head, <a href="https://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity">Designing Safer Web Animation for Motion Sensitivity</a></li>
+            </ol>
+          </li>
+          <li>
+            <h4>To Do</h4>
+            <ol>
+              <li>Production Problem 02 Discussion</li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+    <article id="week-09" class="week" data-expires="2018-03-19T12:00:00-05:00">
+      <header>
+        <h3>Activity Theory</h3>
+        <small>Week&nbsp;Nine</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, March 5 <a href="https://youtu.be/_B7MQpNehzQ">Video</a></h4>
+          <ol>
+            <li>Activity theory and HCI</li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, March 7 <a href="https://youtu.be/jL3FI0VV1xY">Video</a></h4>
+          <ol>
+            <li>Analyzing and designing for tasks within an AT/HCI framework</li>
+            <li>Improving native form elements for user tasks</li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Read</h4>
+            <ol>
+              <li>
+                Marcotte, <i>Responsive Design: Patterns &amp; Principles</i>, All Chapters
+              </li>
+              <li>
+                Kaptelinin and Nardi, “Activity Theory in a Nutshell”
+                (<a href="https://3.basecamp.com/3058761/buckets/5674607/messages/953295152">see Basecamp</a>)
+              </li>
+            </ol>
+          </li>
+          <li>
+            <h4>To Do</h4>
+            <ol>
+              <li>Production Problem 03</li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+    <article id="week-10" class="week">
+      <header>
+        <h3>Spring Break; No Class</h3>
+        <small>Week&nbsp;Ten</small>
+      </header>
+    </article>
+    <article id="week-11" class="week" data-expires="2018-03-26T12:00:00-05:00">
+      <header>
+        <h3>Review and Refresh; Prototyping Data-Driven Interfaces with JavaScript</h3>
+        <small>Week&nbsp;Eleven</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, March 19</h4>
+          <ol>
+            <li>No class</li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, March 21 <a href="https://youtu.be/I1tA8oZmSrI">Video</a></h4>
+          <ol>
+            <li>
+              Enhancing user interactions with API data
+            </li>
+            <li>
+              Accessing data APIs from the browser; CORS restrictions
+            </li>
+            <li>
+              Understanding and parsing JSON API responses
+            </li>
+            <li>
+              Assisting users without getting in their way
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Do</h4>
+            <ol>
+              <li>Finish Project Two draft</li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+    <article id="week-12" class="week" data-expires="2018-04-02T12:00:00-05:00">
+      <header>
+        <h3>Usability: Guiding Principles, HCI Guidelines</h3>
+        <small>Week&nbsp;Twelve</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, March 26 <a href="https://youtu.be/NqOEP6SfaRc">Video</a></h4>
+          <ol>
+            <li>HCI guidelines</li>
+            <li>Scoping and planning a full-scale site</li>
+            <li>Connecting steps in a process to URLs</li>
+            <li>
+              Loading HTML resources with AJAX to progressively enhance multi-page steps, using
+              jQuery’s <a href="https://api.jquery.com/load/">load()</a>
+            </li>
+            <li>
+              Serializing form data to DRY up your JavaScript, using jQuery’s
+              <a href="https://api.jquery.com/serializeArray/">serializeArray()</a>
+            </li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, March 28 <a href="https://youtu.be/1V5pe2rovQA">Video</a></h4>
+          <ol>
+            <li>Designing usable interfaces: seat selection (by request)</li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Read</h4>
+            <ol>
+              <li>Krug, <i>Don’t Make Me Think</i>, Introduction; Ch. 1-5</li>
+              <li>Apple, <a href="https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/">iOS Design Principles</a></li>
+              <li>Android, <a href="https://developer.android.com/design/index.html">Android design</a> (many links to Google Material Design)</li>
+              <li>Windows, <a href="https://developer.microsoft.com/en-us/windows/desktop/design">Design applications for the Windows desktop</a></li>
+            </ol>
+          </li>
+          <li>
+            <h4>To Do</h4>
+            <ol>
+              <li>Production Problem 04</li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+    <article id="week-13" class="week" data-expires="2018-04-09T12:00:00-05:00">
+      <header>
+        <h3>Ethics and Dark Patterns</h3>
+        <small>Week&nbsp;Thirteen</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, April 2 <a href="https://youtu.be/M3orI0-lFts">Video</a></h4>
+          <ol>
+            <li>Ethics and users</li>
+            <li>The role of emotions in design</li>
+            <li>
+              Improving the seating demo: parity with the input and chart; sanitizing user data
+            </li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, April 4 <a href="https://youtu.be/3DRbk8-drwU">Video</a></h4>
+          <ol>
+            <li>Finishing the seating demo to make it responsive</li>
+            <li>Form elements within responsive layouts</li>
+            <li>The trouble with common RWD patterns</li>
+            <li>Revisiting the grid</li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Read</h4>
+            <ol>
+              <li>Krug, <i>Don’t Make Me Think</i>, Ch. 6-7, 10-11</li>
+              <li>
+                Nerdwriter, <a href="https://www.youtube.com/watch?v=kxkrdLI6e6M">How Dark Patterns Trick You Online</a>
+                [Video]
+              </li>
+              <li>
+                Brownlee, <a href="https://www.fastcodesign.com/3060553/why-dark-patterns-wont-go-away">Why Dark Patterns Won’t Go Away</a>
+              </li>
+              <li>
+                Brignull, <a href="https://darkpatterns.org">Darkpatterns.org</a> (browse)
+              </li>
+            </ol>
+          </li>
+          <li>
+            <h4>To Do</h4>
+            <ol>
+              <li><b>Project Two Due</b>, Thursday 4/12 11:59pm</li>
+              <li>Production Problem 04 Discussion</li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+    <article id="week-14" class="week" data-expires="2018-04-16T12:00:00-05:00">
+      <header>
+        <h3>JavaScript-Backed Prototyping</h3>
+        <small>Week&nbsp;Fourteen</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, April 9</h4>
+          <ol>
+            <li>No Class</li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, April 11 <a href="https://youtu.be/7Otqh4pJ_MQ">Video</a></h4>
+          <ol>
+            <li>Prototyping interfaces with JavaScript (no back end)</li>
+            <li>Writing, reading, and destroying cookies</li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Read</h4>
+            <ol>
+              <li>Krug, <i>Don’t Make Me Think</i>, Ch. 8-9, 12-13</li>
+              <li>MDN,
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie">Document.cookie</a>,
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework">Simple cookie framework</a>
+                (<a href="https://github.com/madmurphy/cookies.js">GitHub repo</a>)
+              </li>
+            </ol>
+          </li>
+          <li>
+            <h4>To Do</h4>
+            <ol>
+              <li>Production Problem 05</li>
+              <li><b>Project Two Due</b>, Thursday 4/12 11:59pm</li>
+              <li>
+                Finish Project 3 testing script, site plan, and A/V release; due 11:59pm on
+                Thursday, 4/19
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+    <article id="week-15" class="week" data-expires="2018-04-23T12:00:00-05:00">
+      <header>
+        <h3>Traditional Usability Testing Methods; Remote Testing, Experimental Builds</h3>
+        <small>Week&nbsp;Fifteen</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, April 16 <a href="https://youtu.be/f4VwalN4nMM">Video</a></h4>
+          <ol>
+            <li>Introduce <a href="projects/#project-three">Project 3</a></li>
+            <li>Usability: testing your project, not users</li>
+            <li>Fundamental testing methods</li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, April 18 <a href="https://youtu.be/btA59HSRZlo">Video</a></h4>
+          <ol>
+            <li>Testing at a distance</li>
+            <li>Experimental builds</li>
+            <li>A/B testing</li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Do</h4>
+            <ol>
+              <li>Production Problem 05 Discussion</li>
+              <li>
+                Project 3 testing script, site plan, and A/V release posted to Basecamp by Thursday, 4/19 11:59pm CT
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+    <article id="week-16" class="week" data-expires="2018-05-12T12:00:00-05:00">
+      <header>
+        <h3>Parting Material: Assessing Front-End Libraries and Frameworks</h3>
+        <small>Week&nbsp;Sixteen</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, April 23</h4>
+          <ol>
+            <li>ITM survey distribution about 362 (first ten mins)</li>
+            <li>Assessing front-end libraries and frameworks</li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, April 25</h4>
+          <ol>
+            <li>
+              <b>NO CLASS MEETING.</b> Stolley available electronically to provide help on
+              final projects.
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Do</h4>
+            <ol>
+              <li><b>Project Three Due</b> Thursday, May 3 at 11:59pm</li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+  </section>
+</main>
+
+<aside id="links">
+  <header>
+    <h3>Important Links</h3>
+  </header>
+  <section id="course-resources">
+    <h4>Course Resources</h4>
+    <ul>
+      <li><a href="https://3.basecamp.com/3058761/projects/5674607">Basecamp</a> (<a href="https://basecamp.com/help/3/guides/apps">apps</a>)</li>
+      <li><a href="https://github.com/itmd-362-2018">All Course Repos</a></li>
+      <li><a href="https://github.com/itmd-362-2018/itmd-362-pp">Production-Problem Repo</a> (be sure to fork)</li>
+      <li><a href="https://gist.github.com/karlstolley/810e9cb69727ff20c3cf56ac33734b79">Course Technology Setup Instructions</a></li>
+    </ul>
+  </section>
+  <section id="essential-tools">
+    <h4>Essential Tools</h4>
+    <ul>
+      <li><a href="https://validator.w3.org/">HTML Validator</a> (W3.org)</li>
+      <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a> (W3.org)</li>
+      <li><a href="http://jshint.com/">JSHint</a> (Web)</li>
+      <li><a href="http://eslint.org/">ESLint</a> (CLI); <a href="https://gist.github.com/profstolley/559aac5112928c7c24c628c6305b70b8#file-eslintrc-json">ITMD 362-style .eslintrc.json</a></li>
+      <li><a href="https://github.com/htmllint/htmllint-cli">htmllint</a>; <a href="https://gist.github.com/profstolley/559aac5112928c7c24c628c6305b70b8">ITMD 362-style .htmllintrc</a></li>
+      <li>CSS <a href="https://github.com/stylelint/stylelint/blob/master/docs/user-guide/cli.md">stylelint</a>; <a href="https://gist.github.com/profstolley/559aac5112928c7c24c628c6305b70b8#file-stylelintrc">ITMD 362-style .stylelintrc</a></li>
+      <li><a href="http://meyerweb.com/eric/tools/css/reset/reset.css">Eric Meyer Reset CSS</a>; <a href="https://gist.github.com/profstolley/b1f851e061f98fcbc0e41d39adc32847#file-_reset-min-css">Modified, Minified 362 Reset</a></li>
+    </ul>
+  </section>
+  <section id="essential-references">
+    <h4><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a> (MDN)</h4>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">HTML Reference</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Reference</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript Reference</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/API">Web APIs/DOM</a></li>
+    </ul>
+    <h4>Technical Specifications</h4>
+    <ul>
+      <li><a href="https://www.w3.org/TR/html51/">HTML 5.1</a> (W3C)</li>
+      <li><a href="http://www.w3.org/TR/html5/">HTML5</a> (W3C)</li>
+      <li><a href="https://developers.whatwg.org">HTML: The Living Standard</a> (WHATWG)</li>
+      <li><a href="http://www.w3.org/Style/CSS/Overview.en.html">CSS</a> (W3C)</li>
+      <li><a href="http://www.ecma-international.org/ecma-262/7.0/index.html">ECMAScript 2016</a> (Ecma)</li>
+      <li><a href="https://tools.ietf.org/html/rfc2616">RFF 2616: HTTP 1.1</a>, 1999 (IETF)</li>
+      <li><a href="http://httpwg.org">RFC 723x Series: HTTP 1.1</a>, 2014 (IETF/HTTPWG)</li>
+      <li><a href="https://tools.ietf.org/html/rfc7540">RFC 7540: HTTP/2</a> (IETF)</li>
+    </ul>
+  </section>
+</aside>
+
+<aside id="instructor">
+  <header>
+    <h3>Instructor</h3>
+  </header>
+  <ul>
+    <li>
+      <a href="https://karlstolley.com/">Dr. Karl Stolley</a>,
+      Associate Professor of Information Technology and Management
+    </li>
+    <li><a href="mailto:karl.stolley@gmail.com">karl.stolley@gmail.com</a></li>
+    <li><a href="https://twitter.com/karlstolley">@karlstolley</a> on Twitter</li>
+    <li>karl.stolley on Google Hangouts</li>
+    <li id="office-hours">
+      Office hours via Google Hangouts on Tuesdays, 2pm to 3pm, or by appointment or chance. I’m
+      always signed into Hangouts and closely monitor my Pings on Basecamp. Message me any time—I
+      make students a priority.
+    </li>
+  </ul>
+</aside>
+
+<footer id="footer">
+  <p class="fineprint">
+    Course syllabus &amp; site design by <a href="https://karlstolley.com/">Karl Stolley</a>.
+    Syllabus licensed under
+    <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons</a>.
+    <a id="github" href="https://github.com/karlstolley/hci">Source hosted on GitHub</a>.
+  </p>
+  <p class="fineprint">View the <a href="/hci-2017/">Spring 2017 version of ITMD 362</a>.</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
