@@ -38,25 +38,31 @@
     <section id="general">
       <h3>Course Description</h3>
       <p>
-        <b>From the Catalog:</b> Students in this course will learn the importance of
-        human-computer interaction design and the effectiveness of user-centered design. The
-        course will cover a survey of methods frequently used by the HCI profession, such as
-        usability testing and prototyping, as well as general design principles and how to use
-        design guidelines. A particular emphasis will be placed on usability for Web site
-        engineering, and students will apply knowledge from the field in the design and
-        construction of user-centered Web sites.
+        This course covers fundamental principles and methods for programmatically accessing and
+        parsing data returned by internet-available data APIs. The course guides students in
+        carefully examining the structure of API endpoints expressed as URLs and the conventions of
+        RESTful architecture. Students will learn to locate and read the documentation for data APIs
+        and gain familiarity with API documentation conventions, while also approaching
+        documentation with a  healthy degree of skepticism. Students will also engage in a thorough
+        study of three common, platform-neutral data-serialization formats: comma-separated values
+        (CSV), Extensible Markup Language (XML), and JavaScript Object Notation (JSON).
       </p>
       <p>
-        <b>Extended Description:</b> Additionally, this course favors a mobile-first approach to
-        web design and development, with special attention to the challenges of designing
-        touch-screen interfaces. Students will learn development methods based on prototyping and
-        rapid iteration, supported by version control and low-stakes user-testing. The design
-        principles the course will emphasize include color, material design, rich web typography,
-        and responsive grid-based page layout. Accessibility, progressive enhancement, and
-        thoughtful, thoroughly researched use of edge technologies and polyfills will be treated
-        as guiding techniques throughout the course. Student work is organized around projects of
-        varying size and scale, emphasizing the course’s hands-on, theory-grounded approach to web
-        design and development.
+        In anticipation of the problems of parsing API data at scale, the course emphasizes
+        approaches to non-blocking I/O through JavaScript’s growing set of asynchronous features and
+        patterns. Students will build on their existing knowledge of JavaScript to begin to write
+        next-generation JavaScript according to the ECMAScript 6, 7, and 8 specifications both in
+        the browser and server-side, in Node.js. Although JavaScript is the course’s shared
+        programming language, the overall principles of API consumption the course covers are
+        applicable to any language capable of opening remote URLs, receiving data, and parsing the
+        result.
+      </p>
+      <p>
+        Additionally, the course looks at building interfaces for end users to query API data and
+        receive useful results targeted to specific tasks or informational needs. While the course
+        emphasizes the consumption and manipulation of API data, the course concludes by looking at
+        techniques, approaches, and conventions for producing a basic data API for others to
+        consume.
       </p>
       <h3>Course Outcomes</h3>
       <p>
@@ -64,22 +70,42 @@
       </p>
       <ul>
         <li>
-          Describe the diversity of information system users and tasks, and their impact on
-          design.
+          Recognize the conventions of API documentation, including coverage of authentication,
+          endpoints, responses, and acceptable use as governed by both professional ethics and legal
+          documents, such as terms of service
         </li>
         <li>
-          Describe the core concepts, applicability, and cost benefits of user-centered design.
+          Programmatically access and parse API data in a variety of data-serialization formats,
+          including CSV, XML, and JSON
         </li>
         <li>
-          Demonstrate how user-centered concerns can be incorporated into system development
-          life cycles.
+          Leverage JavaScript and the asynchronous features of Node.js to consume API data and
+          deliver it in web-friendly formats
         </li>
-        <li>Explain the need to evaluate system usability.</li>
-        <li>Describe and apply general principles of design.</li>
-        <li>Describe and execute touch-friendly, mobile-first responsive web design.</li>
         <li>
-          Understand and apply core theories from human-computer interaction to web design and
-          development.
+          Effectively structure, design, and present consumed API data to serve specific user needs
+          through responsive web interfaces
+        </li>
+        <li>
+          Thoughtfully evaluate and adopt only the most standards-compliant documentation,
+          libraries, and development techniques for accessing, authenticating to, and parsing API
+          data
+        </li>
+        <li>
+          Write valid, well-formed semantic HTML; error-free, backward- and forward-compatible CSS;
+          and error-free, progressively enhanced JavaScript over HTML pages that continue to
+          function in the absence of JavaScript
+        </li>
+        <li>
+          Make use of validators, linters, and custom test suites to ensure code quality both in
+          terms of expected function and adherence to published standards and documentation
+        </li>
+        <li>
+          Effectively comment on and format source code for maximum readability
+        </li>
+        <li>
+          Track the development of a project over time and collaborate with others using version
+          control
         </li>
       </ul>
       <h3>Course Objectives</h3>
@@ -87,25 +113,36 @@
         At the conclusion of this course, successful students will be able to:
       </p>
       <ul>
-        <li>Recall, describe and apply principles of user-centered design.</li>
-        <li>Conduct task analysis &amp; apply the information to user-centered design.</li>
-        <li>Evaluate user interface designs with human subjects.</li>
         <li>
-          Recall, explain, and apply the design principles of alignment, contrast, proximity,
-          and repetition.
+          Explain the client and server architecture of the internet and related web technologies
+          for the delivery and consumption of data APIs
         </li>
         <li>
-          Design and build a user-centered website applying HCI methods and good principles of
-          design.
+          Recognize and parse API data in common serialization formats, including CSV, XML, and JSON
         </li>
-        <li>Apply color and typography in web design to optimize the interface.</li>
         <li>
-          Engage in agile, iterative web design and development individually and in teams, supported
-          by version control.
+          Identify and write syntactical and semantic features of ECMAScript 6, 7, and 8, such as
+          arrow functions, block-scoped variable declarations, and template literals
+        </li>
+        <li>
+          Use Babel and other JavaScript preprocessors, compilers, and polyfills to generate
+          client-side JavaScript from next-generation ECMAScript syntax to achieve broader
+          backward-compatibility
+        </li>
+        <li>
+          Make use of asynchronous features of JavaScript, including Promises and the
+          <code>async</code>/<code>await</code> operators, to handle non-blocking I/O
+        </li>
+        <li>
+          Engage in agile, iterative development supported by version control
         </li>
         <li>
           Write useful, descriptive messages attached to granular commits in a version control
-          system.
+          system
+        </li>
+        <li>
+          Make liberal use of feature and release branches in a version-control system to enhance
+          experimentation and streamline problem-soliving
         </li>
       </ul>
     </section>
@@ -115,41 +152,43 @@
         <h4>Required Books</h4>
         <ul>
           <li>
-            Andrew, Rachel. <i>The New CSS Layout</i>. New York: A Book Apart, 2017.
-            ISBN 9781937557683 $11 (eBook)
+            Haverbeke, Marijn. <cite>Eloquent JavaScript</cite>. 3rd ed. No Starch Press.
+            <a href="http://eloquentjavascript.net">Available on the web</a> in multiple electronic
+            formats.
           </li>
           <li>
-            Clark, Josh. <i>Designing for Touch</i>. New York: A Book Apart, 2015.
-            ISBN 9781937557287 $11 (eBook)
+            Subramaniam, Venkat. <cite>Rediscovering JavaScript: Master ES6, ES7, and ES8</cite>.
+            Pragmatic Bookshelf. $24.95 (beta eBook; must be bought directly from
+            <a href="https://pragprog.com/book/ves6/rediscovering-javascript">Pragmatic Bookshelf</a>).
+            ISBN 9781680505467
           </li>
           <li>
-            Krug, Steven. <i>Don't Make Me Think, Revisited: A Common Sense Approach to Web
-            Usability</i>, 3rd ed. Berkeley, CA: New Riders, 2014. ISBN 9780321965516 $36 (eBook)
+            Wilson, Jim R.
+            <cite>Node.js 8 the Right Way: Practical, Server-Side JavaScript that Scales</cite>.
+            Pragmatic Bookshelf. $19.95 (eBook). ISBN 9781680501957
+          </li>
+        </ul>
+        <h4>Recommended Books</h4>
+        <ul>
+          <li>
+            Morgan, Joe. <cite>Simplifying JavaScript: Writing Modern JavaScript with ES5, ES6, and
+            Beyond</cite>. Pragmatic Bookshelf. $25.95 (eBook). ISBN 9781680502886
           </li>
           <li>
-            Lupton, Ellen. <i>Thinking with Type: A Critical Guide for Designers, Writers, Editors,
-            &amp; Students</i>. 2nd ed. New York: Princeton Architectural Press, 2010.
-            ISBN 9781568989693 $25 (paperback)
-          </li>
-          <li>
-            Marcotte, Ethan. <i>Responsive Design: Patterns and Principles</i>. New York: A Book
-            Apart, 2015. ISBN 9781937557331 $11 (eBook)
-          </li>
-          <li>
-            Other readings linked from the course calendar and otherwise made available
-            electronically
+            Swicegood, Travis. <cite>Pragmatic Version Control Using Git</cite>. Pragmatic Bookshelf.
+            $25.00 (eBook). ISBN 9781934356159
           </li>
         </ul>
         <p class="note">
-          <b>My policy for assigning books:</b> they are all required in the edition indicated; the
-          total retail pricetag for the entire course should be less than $100 (this one is $94 on
-          the high end, assuming you opt for the eBook or paperback formats indicated below); and
-          each book should be worthy of a place on your bookshelf or electronic device of choice
-          long after the class has ended.
+          <b>My policy for assigning books:</b> Required Books are all required in the edition
+          indicated; the total retail pricetag for the entire course should be less than $100 (this
+          one is $95 on the high end, assuming you opt for the electronic formats, including the
+          Recommended Books); and each book should be worthy of a place on your bookshelf or
+          electronic device of choice long after the class has ended.
         </p>
         <p class="note">
           I want to help you build your professional library while also being sensitive to your
-          personal finances. While many things about the <a href="../">course calendar</a> will
+          personal finances. While many things about the <a href="../">course calendar</a> may
           change, the reading schedule will not. I invite you to hold off on purchasing specific
           books until closer to the time that we read them.
         </p>
@@ -159,7 +198,6 @@
         <ul>
           <li>A blank, bound paper sketchbook of 100 pages or more</li>
           <li>An email account that you check regularly</li>
-          <li>A Dropbox, Google Drive, or other cloud-storage account</li>
           <li>A browser- or cloud-based bookmarking scheme to aid your information management</li>
           <li>
             A Basecamp account (invite will arrive via email); Basecamp, not Blackboard, will be
@@ -170,12 +208,10 @@
             <a href="technology-policy">course technology policy</a> below)
           </li>
           <li>
-            The domain of your name (e.g., karlstolley.com belongs to the instructor) or, if privacy
-            is a concern, the domain for your public alias
-          </li>
-          <li>
-            A personal computer, ideally Unix-based (Linux, BSD, OS X), with the following
-            software installed:
+            A personal computer, running a Unix-based operating system, such as Linux, BSD, or
+            MacOS. A Linux running virtualized on Windows is fine, but Windows itself is not—you
+            will need access to a variety of dev tools that are hard to come by on Windows. Your
+            computer should also have the following software installed:
             <ul>
               <li>
                 A plain-text editor capable of syntax highlighting; set up to use UTF-8/Unicode
@@ -185,11 +221,6 @@
               <li>Firefox Developer Edition (free)</li>
               <li>Git (free)</li>
               <li>Node.js (free)</li>
-              <li>Image-editing software (such as the free and open-source GIMP)</li>
-              <li>
-                As many different browsers as your operating system supports (e.g., Chrome, Opera,
-                Firefox, Vivaldi; all free)
-              </li>
             </ul>
           </li>
         </ul>
