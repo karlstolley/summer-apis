@@ -166,7 +166,9 @@ header small {
 #footer {
   padding-top: 2.5263157895em; /* 48 / 19 = 2.5263157895 */
 }
-
+#projects article {
+  padding-bottom: 2.5263157895em; /* 48 / 19 = 2.5263157895 */
+}
 
 /* Modular Styles */
 #header a {
