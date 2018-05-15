@@ -94,7 +94,7 @@
   $(window).on('resize', toggledNav);
 
   // Set up a non-semantic container to highlight the current week
-  $('#calendar .primary > header').html('<h2>This Week</h2>').after('<div id="this-week"></div>');
+  $('#calendar #content').before('<div id="this-week"></div>');
 
   // Highlight the current and next weeks
 
@@ -115,6 +115,7 @@
     });
 
     // Identify the current week
+    $('#calendar .primary > header').html('<h2>This Week</h2>').appendTo('#this-week');
     futureWeeks[0].clone().removeClass('is-future').appendTo('#this-week');
     futureWeeks[0].addClass('is-current').removeClass('is-future').attr('id', 'current-week');
     futureWeeks[0].before('<h2>Full Calendar</h2>');
