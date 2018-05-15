@@ -152,6 +152,7 @@ header small {
 }
 
 #header,
+#this-week,
 #content,
 #links,
 #instructor,
@@ -159,6 +160,7 @@ header small {
   padding-left: 11%; /* 33 / 300 = 0.11 */
   padding-right: 11%; /* 33 / 300 = 0.11 */
 }
+
 #links,
 #instructor,
 #footer {
@@ -179,11 +181,16 @@ header small {
   color: #a63140; /* red */
 }
 
-#content h2 {
+h2 {
   font-weight: normal;
   font-size: 1.9531052632em; /* 37.109 / 19 = 1.9531052632 */
   line-height: 1.2934867552em; /* 48 / 37.109 = 1.2934867552 */
   padding-bottom: 0.6467433776em; /* 24 / 37.109 = 0.6467433776 */
+}
+h2#nav-menu {
+  font-size: inherit;
+  line-height: inherit;
+  padding-bottom: inherit;
 }
 .assigned h3 {
   font-size: inherit;
@@ -198,8 +205,18 @@ h3 + small {
   padding-bottom: 0.6315789474em; /* 12 / 19 = 0.6315789474 */
 }
 
-
-
+#this-week {
+  padding-top: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
+  padding-bottom: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
+  background: #296c94; /* blue */
+  color: #e1fdff;
+}
+#this-week .assigned {
+  background-color: rgba(0,0,0,.2);
+}
+#this-week a {
+  color: #ffd58e;
+}
 .tagline,
 .note,
 #footer p {
