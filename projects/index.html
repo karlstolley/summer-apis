@@ -71,6 +71,42 @@
         <h4>Project Goals</h4>
         <ul>
           <li>
+            Develop familiarity with the conventions of API documentation, including coverage of
+            authentication, endpoints, responses, and acceptable use as governed by both
+            professional ethics and legal documents, such as terms of service
+          </li>
+          <li>
+            Programmatically access and parse API data in a variety of data-serialization formats,
+            such as CSV, XML, or JSON
+          </li>
+          <li>
+            Leverage JavaScript and the asynchronous features of Node.js to consume API data and
+            deliver it in web-friendly formats, using the Express.js framework
+          </li>
+          <li>
+            Effectively structure, design, and present consumed API data to serve specific user
+            needs in a responsively designed web-based data display
+          </li>
+          <li>
+            Thoughtfully evaluate and adopt only the most standards-compliant documentation,
+            libraries, and development techniques for accessing, authenticating to, and parsing API
+            data
+          </li>
+          <li>
+            Write valid, well-formed semantic HTML; error-free, backward- and forward-compatible CSS;
+            and error-free, progressively enhanced JavaScript over HTML pages that continue to
+            function in the absence of JavaScript
+          </li>
+          <li>
+            Make use of validators, linters, and custom test suites to ensure code quality both in
+            terms of expected function and adherence to published standards and documentation
+          </li>
+          <li>
+            Effectively comment on and format source code for maximum readability
+          </li>
+          <li>
+            Track the development of a project over time and collaborate with others using version
+            control
           </li>
         </ul>
       </section>
@@ -78,11 +114,14 @@
         <h4>Deliverables &amp; Milestones</h4>
         <ol>
           <li>
-
+            In-progress drafts of your work posted to Basecamp during Weeks Two and Three; your post
+            should contain a link to your repository on GitHub and specific requests for help and
+            feedback. <b>Tip: start a message thread for your project during Week Two and post your
+            follow-up post in Week Three as an update or a comment on your Week Two thread.</b>
           </li>
           <li>
-            Substantive comments critiquing at least three other student projects (by June 10,
-            11:59pm CT).
+            Substantive to at least six other student drafts posted to Basecamp during Weeks Two and
+            Three
           </li>
           <li>
             An email to the instructor containing the projects two final deliverables (by June
@@ -100,20 +139,11 @@
         </ol>
       </section>
       <section class="requirements">
-        <h4>Requirements</h4>
+        <h4>General Requirements</h4>
         <ul>
-          <li>
-            Project must be built with only one valid well-formed HTML file, one valid CSS file,
-            and one JavaScript file.
-          </li>
           <li>
             All source files in UTF-8/Unicode character encoding with Unix-style line endings (LF),
             entabbed with spaces (two spaces per tab)
-          </li>
-          <li>
-            Your HTML, CSS, and JavaScript files should all be indented with 2 spaces per level of
-            indent; indent all CSS style rules inside the declaring block, and further indent all
-            rules and blocks inside your media queries. Indent inside of all blocks in JavaScript.
           </li>
           <li>
             Organized, readable source that is hand-written and original (no WYSIWYGs or
@@ -122,20 +152,53 @@
             such as Umbrella JS or Shoestring.
           </li>
           <li>
-            Make use of both the validators and linters to ensure the quality of HTML, CSS, and
-            JavaScript
+            Make use of validators and linters to ensure the quality of HTML, CSS, and JavaScript
           </li>
           <li>
-            Semantically structured text-based content to accompany all media elements (image,
+            A Git repository with frequent commits and meaningful commit messages that accurately
+            reflect each set of changes that you make
+          </li>
+          <li>
+            Your GitHub repository must contain ONLY the files and commits from this project
+          </li>
+        </ul>
+
+        <h4>Back-End Requirements</h4>
+        <ul>
+          <li>
+            Use the <a href="http://expressjs.com/">Express.js</a> framework to develop your
+            app
+          </li>
+          <li>
+            Generate the skeleton of your app using the
+            <a href="http://expressjs.com/en/starter/generator.html">Express application generator</a>;
+            your initial Git commit should immediately follow generating the skeletal app that way
+          </li>
+          <li>
+            Properly fill out and maintain your <code>package.json</code> file to track additional
+            dependencies and version your project
+          </li>
+          <li>
+            Rely solely on asynchronous patterns to fetch API data on the server side, through your
+            app
+          </li>
+          <li>
+            Project must be built to deliver to the browser only one valid well-formed HTML file,
+            one valid CSS file, and one JavaScript file.
+          </li>
+        </ul>
+
+        <h4>Front-End Requirements</h4>
+        <ul>
+          <li>
+            Your HTML, CSS, and JavaScript files should all be indented with 2 spaces per level of
+            indent; indent all CSS style rules inside the declaring block, and further indent all
+            rules and blocks inside your media queries. Indent inside of all blocks in JavaScript.
+          </li>
+          <li>
+            Semantically structured text-based content to accompany any media elements (image,
             audio, video). Make use of the <code>&lt;figure&gt;</code> and
             <code>&lt;figcaption&gt;</code> tags
-          </li>
-          <li>
-            One single valid, linted, error-free CSS file called <code>screen.css</code>. <b>Do
-            not</b> create more than one CSS file for your project; all styles should be in the same
-            file. Use an <code>id</code> value on <code>&lt;html&gt;</code> or
-            <code>&lt;body&gt;</code> and leverage that in a CSS descendant selector if you need a
-            special style on a particular page.
           </li>
           <li>
             The opening lines of your <code>screen.css</code> file should be the Eric Meyer reset
@@ -147,8 +210,8 @@
             units are permitted in your CSS
           </li>
           <li>
-            Use at least three min-width media queries to enhance your mobile-first styles for
-            larger screens
+            Use at least three min-width media queries to enhance mobile-first styles for larger
+            screens
           </li>
           <li>
             Use JavaScript only for progressive enhancement. All site content and basic
@@ -164,16 +227,9 @@
             your HTML.
           </li>
           <li>
-            Avoid using JavaScript to manipulate your CSS whenever possible. Limit JavaScript to
-            manipulating the DOM, including adding and removing state classes, and keep style
-            information and transitions where they belong: in your CSS file.
-          </li>
-          <li>
-            A Git repository with frequent commits and meaningful commit messages that accurately
-            reflect each set of changes that you make
-          </li>
-          <li>
-            Your GitHub repository must contain ONLY the files and commits from this project
+            Avoid using JavaScript to manipulate your CSS whenever possible. Limit client-side
+            JavaScript to manipulating the DOM, including adding and removing state classes, and
+            keep style information and transitions where they belong: in your CSS file.
           </li>
         </ul>
       </section>
