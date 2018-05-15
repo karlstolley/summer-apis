@@ -355,8 +355,6 @@ h3 + small {
   .nav {
     right: 11%; /* TODO: Align with RH column on calendar */
   }
-  #projects #content,
-  #policies #content,
   #instructor {
     width: 60%;
   }
@@ -417,5 +415,13 @@ h3 + small {
   }
   .cssgrid #essential-references {
     grid-area: references;
+  }
+}
+
+/* 1040 / 16 = 65em */
+@media screen and (min-width: 65em) {
+  #projects #content,
+  #policies #content {
+    width: 60%;
   }
 }
