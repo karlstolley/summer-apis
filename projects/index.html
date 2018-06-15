@@ -243,36 +243,60 @@
         <h4>Project Description</h4>
         <p>
           You will build upon and improve your work from Project One and create a more interactive
-          system for navigating API data, including additional data requests based on user input.
-          Full project description will be posted by June 18.
+          system for navigating API data, including additional data requests based on user input,
+          if necessary. However, if your API requests already include additional data, you might
+          only need to manipulate what’s already there. Let your API and your user interactions be
+          your guide.
+        </p>
+        <p>
+          As you’ll see below, the requirements for this project are almost identitical to Project
+          One.
         </p>
       </section>
-  <!--
       <section class="goals">
         <h4>Project Goals</h4>
         <ul>
-          <li>Conduct task analysis and apply the information gained to a user-centered design</li>
           <li>
-            Build interface modules/elements from a basic design foundation of alignment, contrast,
-            proximity, and repetition
+            Develop deeper familiarity with the conventions of API documentation, including coverage
+            of authentication, endpoints, responses, and acceptable use as governed by both
+            professional ethics and legal documents, such as terms of service
           </li>
           <li>
-            Apply design principles including color/material, typography, accessible media, and
-            grid-based design
+            Programmatically access and parse API data in a variety of data-serialization formats,
+            such as CSV, XML, or JSON
           </li>
           <li>
-            Execute a progressively enhanced, touch-friendly, mobile-first responsive design focused
-            on system users and tasks
+            Leverage JavaScript and the asynchronous features of Node.js to consume API data and
+            deliver it in web-friendly formats, using the Express.js framework
           </li>
           <li>
-            Write informative text content; catch error conditions and guide users accordingly
+            Effectively structure, design, and present consumed API data to serve specific user
+            needs in a responsively designed web-based data display
           </li>
-          <li>Experiment with design and interaction patterns for pleasing user experience</li>
           <li>
-            Engage in agile, iterative web design and development within a team-based workflow on
-            GitHub, via pull requests and code reviews, coordinated over a project-management app
-            like Basecamp, Slack, or Trello
+            Thoughtfully evaluate and adopt only the most standards-compliant documentation,
+            libraries, and development techniques for accessing, authenticating to, and parsing API
+            data
           </li>
+          <li>
+            Write valid, well-formed semantic HTML; error-free, backward- and forward-compatible CSS;
+            and error-free, progressively enhanced JavaScript over HTML pages that continue to
+            function in the absence of JavaScript
+          </li>
+          <li>
+            Make use of the <code>Fetch</code> API or another means (AJAX) for handling user
+            requests for additional data, when appropriate
+          </li>
+          <li>
+            Make use of validators, linters, and custom test suites to ensure code quality both in
+            terms of expected function and adherence to published standards and documentation
+          </li>
+          <li>
+            Effectively comment on and format source code for maximum readability
+          </li>
+          <li>
+            Track the development of a project over time and collaborate with others using version
+            control
           </li>
         </ul>
       </section>
@@ -280,165 +304,131 @@
         <h4>Deliverables &amp; Milestones</h4>
         <ol>
           <li>
-            Whole team: A project proposal, based in part on your work for Production Problem 02,
-            describing:
-            <ul>
-              <li>
-                Who the members are on your team (organize yourselves on Basecamp starting 2/19)
-              </li>
-              <li>What kind of booking system you will build</li>
-              <li>
-                What the URL is to your shared team GitHub repository, and the URLs to each team
-                member’s individual fork of the shared repository
-              </li>
-              <li>
-                Which project-management/communication app (e.g., Basecamp, Slack, Trello, or
-                something else) that you will use to communicate with one another to coordinate your
-                work and avoid disasters on GitHub and elsewhere.
-              </li>
-            </ul>
-            The proposal should be collaboratively written as a Markdown file in your shared GitHub
-            repository (due no later than Sunday, February 25, 11:59pm CT). Designate one member of
-            the group to post as a new message thread on Basecamp the URL to the group repo
-            containing the proposal.
+            In-progress drafts of your work posted to Basecamp during Weeks Five and Six; your post
+            should contain a link to your repository on GitHub and specific requests for help and
+            feedback. <b>Tip: start a message thread for your project during Week Five and post your
+            follow-up post in Week Six as an update or a comment on your Week Two thread.</b>
           </li>
           <li>
-            Whole team: A screen-by-screen task analysis of existing sites that provide similar
-            functionality to your chosen task (again, e.g., booking a flight, purchasing
-            reserved-seating tickets to a concert, ordering food for delivery at a specific time).
-            Post to Basecamp (due no later than Thursday, March 8, 11:59pm CT).
+            Substantive to at least six other student drafts posted to Basecamp during Weeks Five and
+            Six
           </li>
           <li>
-            Whole team: A video presentation of your team’s work in progress, hosted on YouTube,
-            Vimeo, or another similar service and posted to Basecamp. Your Basecamp post should
-            include the URL to your team’s GitHub repository and a URL to the live site (GitHub
-            Pages is fine). Include in the text of your post one or two <b>specific</b> things you
-            would like feedback or help on from the instructor and other students in the class (due
-            no later than Sunday, March 25, 11:59pm CT).
-          </li>
-          <li>
-            Each team member: Substantive comments critiquing at least three other team projects (by
-            Sunday, April 1, 11:59pm CT).
-          </li>
-          <li>
-            Each team member: an email to the instructor containing the project’s three final
-            deliverables (by Thursday, April 12, 11:59pm CT):
+            An email to the instructor containing the projects two final deliverables (by July 1,
+            11:59pm CT):
             <ol>
               <li>
-                A 4-5 sentence self-critique memo of your project and your progress in class to this
-                point
+                A 4-5 sentence self-critique memo of your project and your progress in class this
+                summer
               </li>
               <li>
-                A 2-3 sentence critique of each group member’s work on the project
-              </li>
-              <li>
-                The https:// links to your individual and group GitHub repositories
+                The https:// link to your project’s GitHub repository
               </li>
             </ol>
           </li>
         </ol>
       </section>
       <section class="requirements">
-        <h4>Requirements</h4>
+        <h4>General Requirements</h4>
         <ul>
           <li>
-            All source files in UTF-8/Unicode character encoding with Unix-style line endings (LF)
+            All source files in UTF-8/Unicode character encoding with Unix-style line endings (LF),
+            entabbed with spaces (two spaces per tab)
           </li>
           <li>
             Organized, readable source that is hand-written and original (no WYSIWYGs or
-            code-generators, no Bootstrap or other off-the-shelf HTML or CSS frameworks)
+            code-generators, no Bootstrap or other off-the-shelf frameworks). A JavaScript framework
+            for basic DOM manipulation is permissible, such as jQuery or a lightweight alternative
+            such as Umbrella JS or Shoestring.
           </li>
           <li>
-            HTML, CSS, and JavaScript files should all be indented with 2 spaces per level of
+            Make use of validators and linters to ensure the quality of HTML, CSS, and JavaScript
+          </li>
+          <li>
+            A Git repository with frequent commits and meaningful commit messages that accurately
+            reflect each set of changes that you make; you can continue work in the repository that
+            you created for Project One, if you like
+          </li>
+        </ul>
+
+        <h4>Back-End Requirements</h4>
+        <ul>
+          <li>
+            Use the <a href="http://expressjs.com/">Express.js</a> framework to develop your
+            app
+          </li>
+          <li>
+            Generate the skeleton of your app using the
+            <a href="http://expressjs.com/en/starter/generator.html">Express application generator</a>;
+            your initial Git commit should immediately follow generating the skeletal app that way
+          </li>
+          <li>
+            Properly fill out and maintain your <code>package.json</code> file to track additional
+            dependencies and version your project
+          </li>
+          <li>
+            Include a <code>.gitignore</code> file that prevents inclusion of the
+            <code>node_modules</code> in your repository
+          </li>
+          <li>
+            Rely solely on asynchronous patterns to fetch API data on the server side, through your
+            app
+          </li>
+          <li>
+            Project must be built to deliver to the browser only one valid well-formed HTML file,
+            one valid CSS file, and one JavaScript file.
+          </li>
+          <li>
+            Use environment variables and the <code>process.env</code> object in Node.js to keep API
+            keys and other sensitive information out of your repository
+          </li>
+        </ul>
+
+        <h4>Front-End Requirements</h4>
+        <ul>
+          <li>
+            Your HTML, CSS, and JavaScript files should all be indented with 2 spaces per level of
             indent; indent all CSS style rules inside the declaring block, and further indent all
-            rules and blocks inside your media queries
+            rules and blocks inside your media queries. Indent inside of all blocks in JavaScript.
           </li>
-          <li>HTML requirements:
-            <ol>
-              <li>
-                Only structural, semantic uses of HTML elements and attributes. <b>Absolutely no</b>
-                table markup, break tags, or any other use of HTML to achieve a particular page
-                layout.
-              </li>
-              <li>
-                Valid HTML form elements, written in conjunction with <code>&lt;label&gt;</code>
-                tags and the <code>for</code> attribute
-              </li>
-              <li>
-                Semantically structured text-based HTML content to accompany any media elements
-                (image, audio, video)
-              </li>
-            </ol>
+          <li>
+            Semantically structured text-based content to accompany any media elements (image,
+            audio, video). Make use of the <code>&lt;figure&gt;</code> and
+            <code>&lt;figcaption&gt;</code> tags
           </li>
-          <li>CSS requirements:
-            <ol>
-              <li>
-                CSS file should open with a set of reset styles (such as the minified Eric Meyer
-                resets from class demos); consider also the Normalize.css styles for forms
-              </li>
-              <li>
-                Only relative units (em, rem, vm, %) in your CSS; no px, pt, or other absolute
-                units allowed (pixel units are allowed in media queries, although you may wish
-                to convert those to 16px-based ems)
-              </li>
-              <li>
-                Use at least two min-width media queries to enhance your mobile-first styles for
-                larger screens
-              </li>
-            </ol>
+          <li>
+            The opening lines of your <code>screen.css</code> file should be the Eric Meyer reset
+            CSS styles
           </li>
-          <li>JavaScript requirements:
-            <ol>
-              <li>
-                JavaScript that throws no uncaught errors and is loaded unobtrusively (no JavaScript
-                event attributes in your HTML, in other words; attach events to any elements
-                requiring interaction)
-              </li>
-              <li>
-                JavaScript that uses function closures and other techniques to avoid polluting the
-                global <code>window</code> namespace
-              </li>
-              <li>
-                JavaScript that uses only asynchronous methods and callbacks
-              </li>
-              <li>
-                Use of JavaScript objects or JSON to prototype interaction with a server to retrieve
-                data, such as indicating seat/show/menu availability
-              </li>
-              <li>
-                Use of cookies to maintain simple information/state between pages (e.g., the number
-                of tickets someone wishes to purchase)
-              </li>
-            </ol>
+          <li>
+            Use of only relative units (<code>em</code>, <code>rem</code>, <code>vm</code>,
+            <code>%</code>) in your CSS; no <code>px</code>, <code>pt</code>, or other absolute
+            units are permitted in your CSS
           </li>
-          <li>Git requirements:
-            <ol>
-              <li>
-                Whole team: A shared team Git repository with frequent commits from each team member
-                and meaningful commit messages that accurately reflect each set of changes. <b>The
-                team GitHub repository must include frequent commits from every team member for the
-                duration of the project.</b>
-              </li>
-              <li>
-                Each team member: An individual Git repository with feature branches, frequent
-                commits, and meaningful commit messages that accurately reflect each set of changes
-                that you make, including experimental work that you ultimately might not push
-                upstream to the shared group repository.
-              </li>
-              <li>
-                All GitHub repositories (team and individual) must contain <b>only</b> the files and
-                commits from this project
-              </li>
-              <li>
-                Use of the command-line Git program on your computer; no commits made through the
-                GitHub web interface, apart from merge commits created as part of code reviews/pull
-                requests
-              </li>
-            </ol>
+          <li>
+            Use at least three min-width media queries to enhance mobile-first styles for larger
+            screens
+          </li>
+          <li>
+            Use JavaScript only for progressive enhancement. All site content and basic
+            functionality (e.g., clicking links, viewing images and other media, scrolling,
+            submitting forms) must still be available even in the absence of JavaScript.
+          </li>
+          <li>
+            <b>Absolutely no</b> <code>on-</code> or other deprecated event attributes in your HTML.
+            Handle all events via event listeners in your JavaScript. The only element of your HTML
+            that should contain any references to JavaScript should be a <code>&lt;script&gt;</code>
+            element that loads your JavaScript file, and possibly also your DOM-manipulation
+            framework. In other words, keep your JavaScript unobtrusive to progressively enhance
+            your HTML.
+          </li>
+          <li>
+            Avoid using JavaScript to manipulate your CSS whenever possible. Limit client-side
+            JavaScript to manipulating the DOM, including adding and removing state classes, and
+            keep style information and transitions where they belong: in your CSS file.
           </li>
         </ul>
       </section>
--->
     </article>
     <article id="project-three">
       <header>
