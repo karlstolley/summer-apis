@@ -115,10 +115,10 @@
     });
 
     // Identify the current week
-    $('#calendar .primary > header').html('<h2>This Week</h2>').appendTo('#this-week');
+    $('#this-week').html('<header><h2>This Week</h2></header>');
+    $('#calendar .primary > header h2').text('Full Calendar');
     futureWeeks[0].clone().removeClass('is-future').appendTo('#this-week');
     futureWeeks[0].addClass('is-current').removeClass('is-future').attr('id', 'current-week');
-    futureWeeks[0].before('<h2>Full Calendar</h2>');
     // Identify the due date for assigned work based on the week's expiration
     dueDate = new Date(futureWeeks[0].attr('data-expires'));
     // Append a human-readable due-date to the assigned header
