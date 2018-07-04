@@ -45,6 +45,19 @@
   // Create a variable to hold HTML for the toggle label
   var toggledLabel;
 
+  // Register service worker
+  if (typeof(navigator.serviceWorker) !== 'undefined') {
+    // Grab the course directory from the URL off of courses.karlstolley.com:
+    sw_path = '/' + window.location.href.split('/')[3] + '/';
+    navigator.serviceWorker.register(sw_path + 'sw.js')
+    .then(function(registration) {
+      console.log('Registered service worker scoped to', registration.scope);
+    })
+    .catch(function(error) {
+      console.error('Failed to register service worker', error)
+    });
+  }
+
   // Helper for toggling label text
   $.fn.toggleLabel = function(current, all) {
     var state = current;
