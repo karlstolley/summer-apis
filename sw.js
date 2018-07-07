@@ -1,4 +1,4 @@
-const version = '0.0.2'
+const version = '0.0.3'
 // Detect the service worker's location to set a scope for absolute paths
 const detected_scope = '/'+location.href.split('/')[3]+'/';
 
@@ -20,15 +20,15 @@ const preloaded_manifests = {
   ]
 };
 
-const cache_list = [
-  cache_of.assets,
-  cache_of.requests,
-  cache_of.pages
-]
+const cache_list = [];
+// Programmatically update the cache_list array from the cache_of object
+for (let what in cache_of) {
+  cache_list.push(cache_of[what]);
+}
 
 addEventListener('install', e => {
   console.log('The service worker is waiting to install...');
-  console.log(preloaded_manifests.essential);
+  console.log(cache_list);
   e.waitUntil(
     caches.open(cache_of.assets)
     .then(this_cache => {
