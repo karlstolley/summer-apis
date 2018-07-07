@@ -2,12 +2,6 @@ const version = '0.0.3'
 // Detect the service worker's location to set a scope for absolute paths
 const detected_scope = '/'+location.href.split('/')[3]+'/';
 
-const cache_of = {
-  assets: 'assets-' + version,
-  requests: 'requests',
-  pages: 'pages'
-};
-
 const preloaded_manifests = {
   essential: [
     'screen.css',
@@ -18,6 +12,12 @@ const preloaded_manifests = {
     '//fast.fonts.net/cssapi/d645cd83-c955-4277-a114-11f6324025d4.css',
     'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'
   ]
+};
+
+const cache_of = {
+  assets: 'assets-' + version,
+  requests: 'requests',
+  pages: 'pages'
 };
 
 const cache_list = [];
