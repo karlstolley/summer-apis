@@ -6,18 +6,24 @@ const detected_scope = '/'+location.href.split('/')[3]+'/';
 
 // Simplified asset manifest, with call to .map() to prepend the absolute,
 // detected scope onto each asset listed
-const local_asset_manifest = [
+const hosted_asset_manifest = [
   'screen.css',
   'site.js',
   'offline.html'
 ].map(asset => detected_scope + asset);
+const remote_asset_manifest = [
+  '//fast.fonts.net/cssapi/d645cd83-c955-4277-a114-11f6324025d4.css',
+  'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'
+];
+
+const cached_assets = hosted_asset_manifest.concat(remote_asset_manifest);
 
 addEventListener('install', e => {
   console.log('The service worker is waiting to install...');
   e.waitUntil(
     caches.open(static_cache)
     .then(cache => {
-      return cache.addAll(local_asset_manifest);
+      return cache.addAll(cached_assets);
     })
   );
 });
