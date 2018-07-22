@@ -106,9 +106,6 @@
   $(document).ready(toggledNav());
   $(window).on('resize', toggledNav);
 
-  // Set up a non-semantic container to highlight the current week
-  $('#calendar #content').before('<div id="this-week"></div>');
-
   // Highlight the current and next weeks
 
   // Go through each week to build the array of future weeks
@@ -122,6 +119,8 @@
 
   // Until the semester is over, do nice things with the calendar
   if (futureWeeks.length > 0) {
+    // Set up a non-semantic container to highlight the current week
+    $('#calendar #content').before('<div id="this-week"></div>');
     // Put an .extended class on all weeks
     $('.week').each(function() {
       $(this).addClass('is-future');
